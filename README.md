@@ -2,7 +2,7 @@
 
 A simple JavaScript module to manage geolocation services with start, stop, and event listener capabilities.
 
-### `start(config: object): void`
+### `startTracking(config: object): void`
 
 Starts the geolocation service with the specified configuration.
 
@@ -10,7 +10,7 @@ Starts the geolocation service with the specified configuration.
   - `config` (object): Configuration options for the geolocation service. This will be converted to JSON internally.
 - **Throws:** Error if the `config` object cannot be serialized to JSON.
 
-### `stop(): void`
+### `stopTracking(): void`
 
 Stops the geolocation service.
 
