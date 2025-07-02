@@ -1,6 +1,6 @@
 import GeoLocation from "@darkube/geolocation-service";
 
-export function startTracking(config) {
+export function startTracking(config: object) {
     GeoLocation.start(config);
 }
 
