@@ -43,6 +43,24 @@ GeoLocation.startTracking(
     { interval: 60000 } // in milliseconds
 );
 
+GeoLocation.start({
+    interval: 60000, // in milliseconds
+    // mqtt configuration
+    mqtt: {
+        endpoint: 'your.endpoint.com',
+        topic: 'your/mqtt-topic',
+        rootCA: `-----BEGIN CERTIFICATE-----
+MIIDQTCCAimgAwIBAgI...
+-----END CERTIFICATE-----`,
+        privateKey: `-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqh...
+-----END PRIVATE KEY-----`,
+        certificate: `-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgI...
+-----END CERTIFICATE-----`
+    }
+});
+
 // Add a location listener
 const locationSubscription = GeoLocation.addLocationListener({ location } => {
   console.log('New location:', location);
