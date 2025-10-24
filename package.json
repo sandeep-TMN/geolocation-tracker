@@ -1,6 +1,6 @@
 {
   "name": "@tenmednetwork/geolocation-tracker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Geolocation tracker module",
   "main": "index.ts",
   "scripts": {

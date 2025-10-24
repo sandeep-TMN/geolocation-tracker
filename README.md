@@ -43,7 +43,7 @@ GeoLocation.startTracking(
     { interval: 60000 } // in milliseconds
 );
 
-GeoLocation.start({
+GeoLocation.startTracking({
     interval: 60000, // in milliseconds
     // mqtt configuration
     mqtt: {
