@@ -1,6 +1,6 @@
 {
   "name": "@tenmednetwork/geolocation-tracker",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "description": "Geolocation tracker module",
   "main": "index.ts",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/sandeep-TMN/geolocation-tracker#readme",
   "dependencies": {
-    "@darkube/geolocation-service": "^0.1.3"
+    "@darkube/geolocation-service": "^0.2.1"
   }
 }

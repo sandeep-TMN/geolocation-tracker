@@ -2,7 +2,7 @@
 
 A simple JavaScript module to manage geolocation services with start, stop, and event listener capabilities.
 
-### `startTracking(config: object): void`
+### `start(config: object): void`
 
 Starts the geolocation service with the specified configuration.
 
@@ -10,7 +10,7 @@ Starts the geolocation service with the specified configuration.
   - `config` (object): Configuration options for the geolocation service. This will be converted to JSON internally.
 - **Throws:** Error if the `config` object cannot be serialized to JSON.
 
-### `stopTracking(): void`
+### `stop(): void`
 
 Stops the geolocation service.
 
@@ -39,11 +39,11 @@ Adds a listener for status changes or completion events.
 import GeoLocation from './GeoLocation';
 
 // Start the geolocation service with configuration
-GeoLocation.startTracking(
+GeoLocation.start(
     { interval: 60000 } // in milliseconds
 );
 
-GeoLocation.startTracking({
+GeoLocation.start({
     interval: 60000, // in milliseconds
     // mqtt configuration
     mqtt: {
@@ -72,7 +72,7 @@ const statusSubscription = GeoLocation.addStatusListener({ status } => {
 });
 
 // To stop the service
-GeoLocation.stopTracking();
+GeoLocation.stop();
 
 // To remove listeners when no longer needed
 locationSubscription.remove();
